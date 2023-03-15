@@ -1,0 +1,14 @@
+from django.contrib import admin
+
+import Mykola
+from .models import *
+
+
+class Mykola_admin(admin.ModelAdmin):
+    list_display = (
+        'first_name', 'last_name', 'person_email', 'telegram_id',
+        'telegram_id', 'counter_login', 'data_reg', 'lust_login'
+    )
+
+
+admin.site.register(Users, Mykola_admin)

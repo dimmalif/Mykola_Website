@@ -1,0 +1,23 @@
+{% load static %}
+<!--style="background-image:url('{% static 'img/background5.jpg' %}');background-repeat:no-repeat;background-size: 100%;background-position: top"-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Микола</title>
+    <link rel="stylesheet" href="{% static 'css/style_text.css' %}" type="text/css">
+</head>
+<body style="background-color: #17181C">
+<div class="gradient"></div>
+    <div class="text3d-wrap-3">
+        <span class="text3d-3"><a href="{% url 'home' %}" style="color: white;text-decoration: none;">Головне меню</a></span>
+        <span class="text3d-3">|</span>
+        <span class="text3d-3"><a href="{% url 'help' %}" style="color: white;text-decoration: none;">Допомога</a></span>
+        <span class="text3d-3" style="margin-left: 750px;" >Авторизація</span>
+        <span class="text3d-3">/</span>
+        <span class="text3d-3"><a href="{% url 'register' %}" style="color: white;text-decoration: none;">Реєстрація</a></span>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

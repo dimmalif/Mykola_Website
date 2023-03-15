@@ -1,0 +1,35 @@
+
+.text3d-wrap-3 {
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.text3d-3 {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #FFF;
+  text-shadow: 0 0 20px black, 0 3px 0 #BFE2FF;
+  transform: none;
+  margin-top: 0px;
+}
+
+.text3d-wrap-3:hover .text3d-3 {
+  transform: scale(1);
+  text-shadow: 0 0 20px black, 0 3px 0 #BFE2FF;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .text3d-3 {
+    font-size: 42px;
+  }
+}

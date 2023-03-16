@@ -5,7 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/va_Mykola" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.10 virtualenv at C:\Users\Dmytro\Desktop\Mykola_Website\backend\Django_Freeman\venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

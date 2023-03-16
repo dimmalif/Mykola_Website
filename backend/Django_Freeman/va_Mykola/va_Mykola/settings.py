@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Mykola.apps.MykolaConfig'
+    'Mykola.apps.MykolaConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

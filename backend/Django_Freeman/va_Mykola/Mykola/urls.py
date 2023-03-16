@@ -12,6 +12,7 @@ urlpatterns = [
     path('HelpPage/', help_page, name='help'),
     path('Register/', register_page, name='register'),
     path('MykolasHouse/<int:page_num>/', num_home),
+    path('api/v1/users/', MykolaAPIView.as_view())
 ]
 
 if settings.DEBUG:

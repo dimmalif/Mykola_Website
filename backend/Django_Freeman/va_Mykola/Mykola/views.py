@@ -1,11 +1,19 @@
 from django.http import HttpResponse, HttpResponseNotFound
 from django.shortcuts import render
 from django.views.generic import CreateView, TemplateView
+from rest_framework import generics
+
+# from va_Mykola.Mykola.models import Users
+# from Django_Freeman.va_Mykola.Mykola.serializers import MykolaSerializer
 
 from Mykola.forms import RegisterPostForm
 from Mykola.models import Users
+from Mykola.serializers import MykolaSerializer
 
 
+class MykolaAPIView(generics.ListAPIView):
+    queryset = Users.objects.all()
+    serializer_class = MykolaSerializer
 # example for education
 def num_home(requests, page_num):
     if requests.GET:
@@ -35,3 +43,6 @@ def register_page(requests):
 
 def pageNotFound(requests, exception):
     return HttpResponseNotFound('<h1>Сторінку не знайдено</h1>')
+
+
+

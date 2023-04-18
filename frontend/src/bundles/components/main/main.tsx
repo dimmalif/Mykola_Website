@@ -2,7 +2,7 @@ import styles from './main.module.scss';
 
 export const Main = () => {
   return (
-    <div className={styles.main}>
+    <div id='main' className={styles.main}>
       <div className={`${styles.content} container`}>
         <div className={styles.imagesContainer}>
           <div className={styles.imageBox}>

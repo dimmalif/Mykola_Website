@@ -4,8 +4,22 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: var(--color-grey-100);
+  text-decoration: none;
+  transition: var(--tr-3);
+
+  &:hover {
+    color: var(--color-grey-200);
+  }
 }
 
 .container {

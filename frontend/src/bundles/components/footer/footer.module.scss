@@ -1,0 +1,35 @@
+.footer {
+  height: var(--header-height);
+  background-color: var(--color-grey-900);
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--p-5);
+}
+
+.company {
+  color: var(--color-grey-100);
+}
+
+.socials {
+  display: flex;
+}
+
+.social {
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-grey-100);
+  margin-left: 20px;
+  border-radius: 50%;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.socialLink {
+
+}

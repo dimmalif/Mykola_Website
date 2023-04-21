@@ -1,9 +1,9 @@
 from rest_framework import serializers
 
-from Mykola.models import Users
+from .models import *
 
 
-class MykolaSerializer(serializers.ModelSerializer):
+class FeaturesSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Users
-        fields = ('person_email')
+        model = Features
+        fields = ('id', 'features_name')

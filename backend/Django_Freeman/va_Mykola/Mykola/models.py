@@ -16,7 +16,14 @@ class Users(models.Model):
     def __str__(self):
         return self.telegram_id
 
-    class Meta:
-        verbose_name = "Mykola's users"
-        verbose_name_plural = "Mykola's users"
-        ordering = ['data_reg']
+    # class Meta:
+    #     verbose_name = "Mykola's users"
+    #     verbose_name_plural = "Mykola's users"
+    #     ordering = ['data_reg']
+
+
+class Features(models.Model):
+    features_name = models.CharField(max_length=50, default='')
+
+    def __str__(self):
+        return self.features_name
